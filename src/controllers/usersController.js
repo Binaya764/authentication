@@ -1,4 +1,5 @@
-const User = require("../model/userModel")
+const User = require("../model/userModel");
+
 async function getUsers(req,res){
     res.render("index");
     //res.send("users list requested");
@@ -28,9 +29,13 @@ async function signUpPage(req,res){
     res.render("sign-up");
 }
 
+async function loginPage(req,res){
+    res.render("login");
+}
 module.exports = {
     getUsers,
     createUser,
-    signUpPage
+    signUpPage,
+    loginPage
 
 }
