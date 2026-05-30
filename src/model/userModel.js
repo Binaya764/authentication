@@ -6,7 +6,7 @@ const userSchema = new schema({
         type: String,
         required: true
     },
-    userEmail:{
+    userPassword:{
         type: String,
         required: true
     },

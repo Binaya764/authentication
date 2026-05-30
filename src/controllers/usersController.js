@@ -9,7 +9,7 @@ async function createUser(req,res){
     try{
         const newUser = new User({
             userName : req.body.userName,
-            userEmail: req.body.userEmail
+            userPassword: req.body.userPassword
 
         });
         const saveduser = await newUser.save();
